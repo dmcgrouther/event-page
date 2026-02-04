@@ -1,13 +1,10 @@
-export default function EventDetails() {
+export default function EventDetails({ event }) {
   return (
     <section style={{ padding: "2rem" }}>
       <h2>Event Details</h2>
-      <p><strong>Date:</strong> April 15, 2026</p>
-      <p><strong>Location:</strong> San Francisco, CA</p>
-      <p>
-        Join React developers from around the world for a day of talks,
-        workshops, and networking.
-      </p>
+      <p><strong>City:</strong> {event.city}</p>
+      <p><strong>Date:</strong> {event.date}</p>
+      <p><strong>Location:</strong> {event.location}</p>
     </section>
   );
 }
